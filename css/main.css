@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+}
+
+/* NAVIGATION MENU (HEADER) */
+
+a {
+    text-decoration: none;
+}
+
+.nav-item > a {
+    color: rgb(31, 31, 31);
+}
+
+.head {
+    width: 100%;
+    background-color: rgba(230, 230, 230, 0.85);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item:not(.logo) {
+    font-size: 40px;
+    padding : 50px; 
+    color: rgb(31, 31, 31)
+}
+
+.logo {
+    width: 200px;
+    padding: 5px;
+}
+
+/* MAIN PART */
+
+.hello {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 50px;
+}
+
+.greeting {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.greeting-text {
+    font-size: 30px;
+    text-align: center;
+    width: 533px;
+    height: 624px;
+    margin-top: 20px;
+}
+
+.catalogue-link, .locations-link {
+    width: 364px;
+    height: 228px;
+    font-size: 36px;
+    padding: 55px 25px;
+    border: 2px solid rgb(31, 31, 31);
+    box-sizing: border-box;
+}
+
+.catalogue-link > a, .locations-link > a {
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+}
+
+.locations-link {
+    position: absolute;
+    top: 1370px;
+    left: 388px;
+}
+
+.catalogue-link {
+    position: absolute;
+    top: 2823px;
+    left: 388px;
+}
+
+/*.tocatalogue {
+    background-image: url("../media/IMG_1687_3.jpg");
+}
+
+.tolocations {
+    background-image: url("../media/IMG_1831_2.jpg");
+}*/
+
+ 
+/* FOOTER */ 
+
+.foot {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook > a, .instagram > a {
+    color: rgb(255, 255, 255);
+}
+
+.facebook, .instagram, .email, .phone {
+    padding: 50px;
+}

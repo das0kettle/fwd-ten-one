@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+}
+
+/* HEADER NAVBAR */
+
+a {
+    text-decoration: none;
+}
+
+.nav-item > a {
+    color: rgb(31, 31, 31);
+}
+
+.head {
+    width: 100%;
+    background-color: rgba(230, 230, 230, 0.85);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item:not(.logo) {
+    font-size: 40px;
+    padding : 50px; 
+    color: rgb(31, 31, 31)
+}
+
+.logo {
+    width: 200px;
+    padding: 5px;
+}
+
+/*MAIN MENU */ 
+
+.info {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.bold {
+    font-size: 48px;
+}
+.regular {
+    font-size: 36px;
+}
+
+/* FOOTER */
+
+.foot {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook > a, .instagram > a {
+    color: rgb(255, 255, 255);
+}
+
+.facebook, .instagram, .email, .phone {
+    padding: 50px;
+}

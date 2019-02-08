@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+}
+
+/* HEADER NAV */
+
+a {
+    text-decoration: none;
+}
+
+.nav-item > a {
+    color: rgb(31, 31, 31);
+}
+
+.head {
+    width: 100%;
+    background-color: rgba(230, 230, 230, 0.85);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item:not(.logo) {
+    font-size: 40px;
+    padding : 50px; 
+    color: rgb(31, 31, 31)
+}
+
+.logo {
+    width: 200px;
+    padding: 5px;
+}
+
+/* MAIN MENU */
+
+.abs-one, .abs-two, .abs-three, .abs-four {
+    width: 800px;
+    position: absolute;
+    font-size: 42px;
+}
+
+.abs-one {
+    top: 382px;
+    left: 150px
+}
+
+.abs-two {
+    top: 1511px;
+    left: 150px;
+}
+
+.black {
+    color: rgb(31, 31, 31);
+}
+
+.abs-three {
+    top: 2648px;
+    left: 150px;
+}
+
+.abs-four {
+    top: 3785px;
+    left: 150px;
+}
+
+/* FOOTER */
+
+.foot {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook > a, .instagram > a {
+    color: rgb(255, 255, 255);
+}
+
+.facebook, .instagram, .email, .phone {
+    padding: 50px;
+}
