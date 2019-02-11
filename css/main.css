@@ -24,9 +24,11 @@ a {
 }
 
 .nav-item:not(.logo) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
     font-size: 40px;
     padding : 50px; 
-    color: rgb(31, 31, 31)
+    color: rgb(31, 31, 31);
 }
 
 .logo {
@@ -38,6 +40,7 @@ a {
 
 .hello {
     text-align: center;
+    font-family: 'Rubik', sans-serif;
     font-size: 48px;
     font-weight: 500;
     margin: 50px;
@@ -50,6 +53,8 @@ a {
 }
 
 .greeting-text {
+    color: rgb(112, 112, 112);
+    font-family: 'Rubik', sans-serif;
     font-size: 30px;
     text-align: center;
     width: 533px;
@@ -57,9 +62,16 @@ a {
     margin-top: 20px;
 }
 
+.photo {
+    width: 1920px;
+    height: 1280px;
+    margin: auto;
+}
+
 .catalogue-link, .locations-link {
     width: 364px;
     height: 228px;
+    font-family: 'Rubik', sans-serif;
     font-size: 36px;
     padding: 55px 25px;
     border: 2px solid rgb(31, 31, 31);
@@ -68,19 +80,24 @@ a {
 
 .catalogue-link > a, .locations-link > a {
     color: rgb(31, 31, 31);
+    font-family: 'Rubik', sans-serif;
     text-decoration: none;
-}
-
-.locations-link {
-    position: absolute;
-    top: 1370px;
-    left: 388px;
 }
 
 .catalogue-link {
     position: absolute;
+    top: 1370px;
+    left: 388px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.locations-link {
+    position: absolute;
     top: 2823px;
     left: 388px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
 
 /*.tocatalogue {
@@ -97,6 +114,8 @@ a {
 .foot {
     width: 100%;
     color: rgb(255, 255, 255);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
     font-size: 32px;
     background-color: rgb(31, 31, 31);
     display: flex;
@@ -105,7 +124,14 @@ a {
 }
 
 .facebook > a, .instagram > a {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
     color: rgb(255, 255, 255);
+}
+
+i {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500; 
 }
 
 .facebook, .instagram, .email, .phone {

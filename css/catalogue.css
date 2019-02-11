@@ -24,9 +24,11 @@ a {
 }
 
 .nav-item:not(.logo) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
     font-size: 40px;
     padding : 50px; 
-    color: rgb(31, 31, 31)
+    color: rgb(31, 31, 31);
 }
 
 .logo {
@@ -38,6 +40,8 @@ a {
 
 .buyheading {
     text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
     font-size: 48px;
     padding-top: 45px;
 }
@@ -62,6 +66,8 @@ a {
 .foot {
     width: 100%;
     color: rgb(255, 255, 255);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
     font-size: 32px;
     background-color: rgb(31, 31, 31);
     display: flex;
@@ -71,6 +77,8 @@ a {
 
 .facebook > a, .instagram > a {
     color: rgb(255, 255, 255);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
 
 .facebook, .instagram, .email, .phone {
