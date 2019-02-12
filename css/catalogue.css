@@ -32,7 +32,7 @@ a {
 }
 
 .logo {
-    width: 200px;
+    max-width: 200px;
     padding: 5px;
 }
 
@@ -53,11 +53,8 @@ a {
     align-items: center;
 }
 
-.self-center {
-    align-self: center;
-}
 
-.row > img, .self-center > img {
+.flex-photo {
     padding: 60px;
 }
 
@@ -83,4 +80,78 @@ a {
 
 .facebook, .instagram, .email, .phone {
     padding: 50px;
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALL LAPTOPS */
+
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+    
+    /* HEADER */
+    
+    .nav-item:not(.logo) {
+        font-size: 32px;
+        padding: 25px;
+    }
+
+    /* FOOTER */
+
+    .facebook, .instagram, .email, .phone {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILES AND TABLETS */
+
+@media only screen and (max-width: 768px) {
+    /* HEADER */
+    .head {
+        width: 100%;
+        position: relative;
+    }
+
+    .logo > a > img {
+        width: 90px;
+        height: 80px;
+        margin: auto;
+    }
+
+    .nav-item:not(.logo) {
+        display: none;
+        position: absolute;
+        top: auto;
+        width: auto;
+    }
+
+    .logo:hover .nav-item {
+        display: block;
+    }
+
+    /* MAIN PART */
+
+    .buyheading {
+        font-size: 20px;
+    }
+    
+    .buyheading, .flex-photo {
+        padding: 20px;
+    }
+
+    /* FOOTER */
+        .foot {
+            width: 100%;
+            display: flex;
+            text-align: center;
+        }
+    
+        .email {
+            display: none;
+            position: absolute;
+        }
+    
+        .facebook, .instagram, .phone {
+            padding: 15px;
+            font-size: 16px;
+        }
+
 }

@@ -32,7 +32,7 @@ a {
 }
 
 .logo {
-    width: 200px;
+    max-width: 200px;
     padding: 5px;
 }
 
@@ -41,9 +41,11 @@ a {
 .info {
     font-family: 'Rubik', sans-serif;
     text-align: center;
-    position: absolute;
-    top: 30%;
-    left: 27.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
 }
 
 .bold {
@@ -79,4 +81,87 @@ a {
 
 .facebook, .instagram, .email, .phone {
     padding: 50px;
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALL LAPTOPS */
+
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+    
+    /* HEADER */
+    
+    .nav-item:not(.logo) {
+        font-size: 32px;
+        padding: 25px;
+    }
+
+    /* FOOTER */
+
+    .facebook, .instagram, .email, .phone {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILES AND TABLETS */
+
+@media only screen and (max-width: 768px) {
+    /* HEADER */
+    .head {
+        width: 100%;
+        position: relative;
+    }
+
+    .logo > a > img {
+        width: 90px;
+        height: 80px;
+        margin: auto;
+    }
+
+    .nav-item:not(.logo) {
+        display: none;
+        position: absolute;
+        top: auto;
+        width: auto;
+    }
+
+    .logo:hover .nav-item {
+        display: block;
+    }
+
+    /* MAIN PART */
+
+    .info {
+        font-family: 'Rubik', sans-serif;
+        text-align: center;
+        padding-top: 15%;
+    }
+    
+    .bold {
+        font-weight: 500;
+        font-size: 24px;
+        padding: 10px;
+    }
+    .regular {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+
+    /* FOOTER */
+        .foot {
+            width: 100%;
+            display: flex;
+            text-align: center;
+        }
+    
+        .email {
+            display: none;
+            position: absolute;
+        }
+    
+        .facebook, .instagram, .phone {
+            padding: 15px;
+            font-size: 16px;
+        }
+
 }

@@ -32,7 +32,7 @@ a {
 }
 
 .logo {
-    width: 200px;
+    max-width: 200px;
     padding: 5px;
 }
 
@@ -48,6 +48,7 @@ a {
 
 .greeting {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-around;
     align-items: center;
 }
@@ -57,56 +58,41 @@ a {
     font-family: 'Rubik', sans-serif;
     font-size: 30px;
     text-align: center;
-    width: 533px;
-    height: 624px;
-    margin-top: 20px;
+    width: 50%;
+    margin: 25px auto;
 }
 
-.photo {
-    width: 1920px;
-    height: 1280px;
-    margin: auto;
+.greeting-video > video {
+    max-width: 100%;
+    height: auto;
+}
+
+.tocatalogue, .tolocations {
+    position: relative;
+    text-align: left;
+}
+
+.tocatalogue > .photo, .tolocations > .photo {
+    max-width: 100%;
+    height: auto;
 }
 
 .catalogue-link, .locations-link {
-    width: 364px;
-    height: 228px;
-    font-family: 'Rubik', sans-serif;
     font-size: 36px;
     padding: 55px 25px;
     border: 2px solid rgb(31, 31, 31);
     box-sizing: border-box;
+    position: absolute;
+    top: 40%;
+    left: 20%;
 }
 
 .catalogue-link > a, .locations-link > a {
     color: rgb(31, 31, 31);
     font-family: 'Rubik', sans-serif;
     text-decoration: none;
-}
-
-.catalogue-link {
-    position: absolute;
-    top: 1370px;
-    left: 388px;
-    font-family: 'Rubik', sans-serif;
     font-weight: 500;
 }
-
-.locations-link {
-    position: absolute;
-    top: 2823px;
-    left: 388px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-}
-
-/*.tocatalogue {
-    background-image: url("../media/IMG_1687_3.jpg");
-}
-
-.tolocations {
-    background-image: url("../media/IMG_1831_2.jpg");
-}*/
 
  
 /* FOOTER */ 
@@ -137,3 +123,112 @@ i {
 .facebook, .instagram, .email, .phone {
     padding: 50px;
 }
+
+/* MEDIA QUERY FOR TABLETS AND SMALL LAPTOPS */
+
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+    
+    /* HEADER */
+    
+    .nav-item:not(.logo), .hello {
+        font-size: 32px;
+        padding: 25px;
+    }
+
+    /* MAIN PART */
+
+    .greeting-text {
+        font-size: 24px;
+    }
+
+    .catalogue-link, .locations-link {
+        font-size: 32px;
+    }
+
+    /* FOOTER */
+
+    .facebook, .instagram, .email, .phone {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILES AND TABLETS */
+
+@media only screen and (max-width: 768px) {
+    /* HEADER */
+    .head {
+        width: 100%;
+        position: relative;
+    }
+
+    .logo > a > img {
+        width: 90px;
+        height: 80px;
+        margin: auto;
+    }
+
+    .nav-item:not(.logo) {
+        display: none;
+        position: absolute;
+        top: auto;
+        width: auto;
+    }
+
+    .logo:hover .nav-item {
+        display: block;
+    }
+
+    /* MAIN PART */
+    .nav-item, .hello {
+        font-size: 24px;
+    }
+
+    .greeting-text {
+        display: none;
+        position: absolute;
+    }
+
+    .greeting-video {
+        width: 85%;
+        height: auto;
+        margin: auto;
+    }
+
+    .photo {
+        width: 85%;
+        margin: auto;
+    }
+
+    .catalogue-link, .locations-link {
+        font-size: 16px;
+        padding: 5px 2.5px;
+        border: 1px solid rgb(31, 31, 31);
+        box-sizing: border-box;
+        left: 10%;
+    }
+    
+    .catalogue-link > a, .locations-link > a {
+        color: rgb(31, 31, 31);
+        font-family: 'Rubik', sans-serif;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    /* FOOTER */
+    .foot {
+        width: 100%;
+        display: flex;
+        text-align: center;
+    }
+
+    .email {
+        display: none;
+        position: absolute;
+    }
+
+    .facebook, .instagram, .phone {
+        padding: 15px;
+        font-size: 16px;
+    }
+  }
