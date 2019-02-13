@@ -45,7 +45,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
+    padding: 5%;
 }
 
 .bold {
@@ -133,7 +133,7 @@ a {
     .info {
         font-family: 'Rubik', sans-serif;
         text-align: center;
-        padding-top: 15%;
+        padding-top: 10%;
     }
     
     .bold {
@@ -149,6 +149,7 @@ a {
 
     /* FOOTER */
         .foot {
+            position: static;
             width: 100%;
             display: flex;
             text-align: center;
