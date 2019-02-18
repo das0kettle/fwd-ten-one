@@ -36,6 +36,12 @@ a {
     padding: 5px;
 }
 
+.mobnav {
+    display: none;
+    position: absolute;
+    top: auto;
+    width: auto;
+}
 
 /* MAIN MENU */
 
@@ -104,6 +110,11 @@ a {
         padding: 25px;
     }
 
+    .navbar {
+        overflow: auto;
+        white-space: nowrap;
+    }
+
     /* MAIN PART */
 
     .bold {
@@ -112,7 +123,7 @@ a {
     
     .location {
         display: flex;
-        flex-direction: column;
+        /*flex-direction: column;*/
         max-width: 85%;
         justify-content: center;
         align-items: center;
@@ -122,11 +133,15 @@ a {
         padding: 35px;
     }
 
+    .address {
+        font-size: 24px;
+    }
+
     /* FOOTER */
 
     .facebook, .instagram, .email, .phone {
         padding: 15px;
-        font-size: 16px;
+        font-size: 24px;
     }
 }
 
@@ -152,8 +167,22 @@ a {
         width: auto;
     }
 
-    .logo:hover .nav-item {
-        display: block;
+    .mobnav {
+        position: static;
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .mobnav-item > a {
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        color: rgb(31, 31, 31);
+        display: inline-block;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
     }
 
     /* MAIN PART */

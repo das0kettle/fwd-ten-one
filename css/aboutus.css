@@ -36,6 +36,14 @@ a {
     padding: 5px;
 }
 
+.mobnav {
+    display: none;
+    position: absolute;
+    top: auto;
+    width: auto;
+}
+
+
 /* MAIN MENU */
 
 .hello {
@@ -57,7 +65,7 @@ a {
 }
 
 .abs-one, .abs-two, .abs-three, .abs-four {
-    max-width: 40%;
+    width: 40%;
     position: absolute;
     top: 0;
     left: 10%;
@@ -103,6 +111,11 @@ a {
     .nav-item:not(.logo), .hello {
         font-size: 32px;
         padding: 25px;
+    }
+
+    .navbar {
+        overflow: auto;
+        white-space: nowrap;
     }
 
     /* MAIN PART */
@@ -152,9 +165,25 @@ a {
         width: auto;
     }
 
-    .logo:hover .nav-item {
-        display: block;
+    .mobnav {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        overflow: auto;
+        white-space: nowrap;
     }
+
+    .mobnav-item > a {
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        color: rgb(31, 31, 31);
+        display: inline-block;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+    }
+
 
     /* MAIN PART */
 
@@ -175,7 +204,7 @@ a {
         display: block;
         font-size: 16px;
         padding: 10px;
-        margin: auto;
+        margin: 0 5%;
         text-align: center;
     }
 

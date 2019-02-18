@@ -36,14 +36,48 @@ a {
     padding: 5px;
 }
 
+.mobnav {
+    display: none;
+    position: absolute;
+    top: auto;
+    width: auto;
+}
+
 /* MAIN PART */
 
-.buyheading {
+.anchor {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+    padding: 2.5% 0;
+    background-color: rgb(31, 31, 31);
+    
+}
+
+.anchor > a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/*.buyheading {
     text-align: center;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 48px;
     padding-top: 45px;
+}*/
+
+
+.left {
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    color: rgb(31, 31, 31);
+    margin:  3% 0 0 3.5%;
 }
 
 .flex {
@@ -52,7 +86,6 @@ a {
     justify-content: space-around;
     align-items: center;
 }
-
 
 .flex-photo {
     padding: 60px;
@@ -87,7 +120,11 @@ a {
 @media screen and (max-width: 1440px) and (min-width: 768px) {
     
     /* HEADER */
-    
+    .navbar {
+        overflow: auto;
+        white-space: nowrap;
+    }
+
     .nav-item:not(.logo) {
         font-size: 32px;
         padding: 25px;
@@ -123,11 +160,33 @@ a {
         width: auto;
     }
 
-    .logo:hover .nav-item {
-        display: block;
+    .mobnav {
+        position: static;
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .mobnav-item > a {
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        color: rgb(31, 31, 31);
+        display: inline-block;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
     }
 
     /* MAIN PART */
+
+    .anchor {
+        font-size: 18px;
+    }
+
+    .left {
+        font-size: 20px;
+    }
 
     .buyheading {
         font-size: 20px;
