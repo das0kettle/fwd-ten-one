@@ -189,7 +189,7 @@ a {
         font-family: "Rubik", sans-serif;
         font-weight: 500;
         color: rgb(31, 31, 31);
-        display: inline-block;
+        display: block;
         text-align: center;
         font-size: 18px;
         padding: 10px;
