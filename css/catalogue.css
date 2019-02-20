@@ -36,7 +36,7 @@ a {
     padding: 5px;
 }
 
-.mobnav {
+.mobnav, .menu-button {
     display: none;
     position: absolute;
     top: auto;
@@ -89,6 +89,11 @@ a {
 
 .flex-photo {
     padding: 60px;
+    transition: transform 1s;
+}
+
+.flex-photo:hover {
+    transform: scale(1.1);
 }
 
 /* FOOTER */
@@ -160,12 +165,22 @@ a {
         width: auto;
     }
 
-    .mobnav {
+    .menu-button {
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+    }
+    
+    .mobnav, .menu-button {
         position: static;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        overflow: auto;
-        white-space: nowrap;
+        align-items: center;
+        /*overflow: auto;
+        white-space: nowrap;*/
     }
 
     .mobnav-item > a {
